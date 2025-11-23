@@ -10,6 +10,7 @@ module decoder2to4_beh
                         2'b01: out[1] = 1;
                         2'b10: out[2] = 1;
                         2'b11: out[3] = 1;
+			default: out = 4'bxxxx;
                 endcase
         end
 endmodule
